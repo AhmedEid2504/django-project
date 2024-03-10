@@ -6,8 +6,12 @@ ToDoList
     <h1>{{ls.name}}</h1>
     <ul>
         {% for item in ls.item_set.all %}
-            <li>{{item.text}} is: {{item.complete}}</li>
-            
+            <li>{{item.text}}</li>
+            {% if item.complete == True %}
+                <span style="color: green">Done!</span>
+            {% else %}
+                <span style="color: red">Not Done Yet</span>
+            {% endif %}
         {% endfor %}
     </ul>
 {% endblock %}
