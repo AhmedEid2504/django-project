@@ -42,3 +42,6 @@ def create(response):
     else:
         form = CreateNewList()
     return render(response, "main/create.html", {"form":form})
+
+# def register(response):
+#     return render(response, "register/register.html", {})
