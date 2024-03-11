@@ -37,11 +37,11 @@ a:hover {
     transition: all .2s ease-in-out;
 }
 
-.main {
+/* .main {
     display: flex;
     flex-direction:column;
     justify-content: flexstart;
     height: 90vh;
     margin-left: 150px;
     padding: 30px;
-}
+} */
